@@ -9,10 +9,10 @@ export default class Timeout {
         this.start = Date.now()
         this.timeLeft = time
     }
-    clear(){
+    clear() {
         clearTimeout(this.id)
     }
-    pause(){
+    pause() {
         const passed = Date.now() - this.start
         this.timeLeft = this.timeLeft - passed
         this.clear()
